@@ -7,16 +7,18 @@ using UnityEngine;
 public class ReadGameData : MonoBehaviour
 {
     public GameObject character;
-    public GameObject hairType;
+    public GameObject [] hairPref;
+    private int hairPrefNum;
     
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    public string write()
+    
+    public void Write()
     {
-        return JsonUtility.ToJson(character, hairType);
-    }    
+       // hairPrefNum = hairPref[];
+        JsonUtility.ToJson(hairPrefNum);
+    } 
 }

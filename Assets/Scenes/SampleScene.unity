@@ -325,8 +325,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 4521320192329881242, guid: c74a69e3dffd3024893d69bbba77012a,
     type: 3}
-  hairType: {fileID: 2733305529081223718, guid: d6b1cf7383e2e894686a3d7b6bf66d0e,
-    type: 3}
+  hairPref:
+  - {fileID: 2733305529081223718, guid: d6b1cf7383e2e894686a3d7b6bf66d0e, type: 3}
 --- !u!4 &1664310339
 Transform:
   m_ObjectHideFlags: 0
