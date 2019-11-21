@@ -7,14 +7,14 @@ Taakverdeling:
 
 Herbert:
 
--UI visuals
+-UI visuals  
 -UI Mechanics
 
 Ian:
 
--UI Mechanics
--Data opslaan via xml
--Randomizible feature
+-UI Mechanics  
+-Data opslaan via JSON  
+-Randomizible feature  
 -Custom terrain maken
 
 Jayden:
