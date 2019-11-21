@@ -19,6 +19,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/dataRead.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataRead.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ReadGameData.cs" />
       </list>
     </option>
@@ -77,6 +78,7 @@
       <updated>1574245071882</updated>
       <workItem from="1574245077927" duration="149000" />
       <workItem from="1574245270712" duration="6949000" />
+      <workItem from="1574331756459" duration="2850000" />
     </task>
     <servers />
   </component>

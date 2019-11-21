@@ -9,6 +9,7 @@ public class ReadGameData : MonoBehaviour
     public GameObject character;
     public GameObject [] hairPref;
     private int hairPrefNum;
+    public int debug;
     
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,17 @@ public class ReadGameData : MonoBehaviour
         
     }
     
-    public void Write()
+    public void WriteToJson(int selectedPrefab)
     {
-       // hairPrefNum = hairPref[];
+        hairPrefNum = selectedPrefab;
         JsonUtility.ToJson(hairPrefNum);
-    } 
+        Debug.Log(hairPrefNum);
+    }
+
+    public void ReadJson()
+    {
+        JsonUtility.FromJson<int>(hairPrefNum.ToString());
+        debug = hairPrefNum;
+        Debug.Log(hairPrefNum);
+    }
 }
