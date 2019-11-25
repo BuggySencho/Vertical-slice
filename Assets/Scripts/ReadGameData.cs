@@ -15,7 +15,7 @@ public class ReadGameData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        path = Application.dataPath + "/Resources/Data/StreamingAssets";
+        path = Application.dataPath + "/StreamingAssets";
         jsonString = File.ReadAllText(path);
         Debug.Log(jsonString);
         Debug.Log("path: " + path);
