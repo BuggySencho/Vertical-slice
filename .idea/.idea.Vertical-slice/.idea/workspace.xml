@@ -13,7 +13,7 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReadGameData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReadGameData.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -78,7 +78,8 @@
       <updated>1574245071882</updated>
       <workItem from="1574245077927" duration="149000" />
       <workItem from="1574245270712" duration="6949000" />
-      <workItem from="1574331756459" duration="2850000" />
+      <workItem from="1574331756459" duration="3458000" />
+      <workItem from="1574416448973" duration="1756000" />
     </task>
     <servers />
   </component>

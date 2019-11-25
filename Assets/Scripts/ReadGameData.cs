@@ -9,16 +9,22 @@ public class ReadGameData : MonoBehaviour
     public GameObject character;
     public GameObject [] hairPref;
     private int hairPrefNum;
-    public int debug;
-    
+    public string path;
+    public string jsonString;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        path = Application.dataPath + "/Resources/Data/StreamingAssets";
+        jsonString = File.ReadAllText(path);
+        Debug.Log(jsonString);
+        Debug.Log("path: " + path);
+        WriteToJson(selectedPrefab: hairPrefNum);
     }
     
     public void WriteToJson(int selectedPrefab)
     {
+        
         hairPrefNum = selectedPrefab;
         JsonUtility.ToJson(hairPrefNum);
         Debug.Log(hairPrefNum);
@@ -27,7 +33,6 @@ public class ReadGameData : MonoBehaviour
     public void ReadJson()
     {
         JsonUtility.FromJson<int>(hairPrefNum.ToString());
-        debug = hairPrefNum;
         Debug.Log(hairPrefNum);
     }
 }
