@@ -660,6 +660,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1664310339}
   - component: {fileID: 1664310338}
+  - component: {fileID: 1664310340}
+  - component: {fileID: 1664310341}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -674,16 +676,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664310337}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62cdc7dcdf472974c80e34cafad5fde4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  character: {fileID: 4521320192329881242, guid: c74a69e3dffd3024893d69bbba77012a,
-    type: 3}
-  hairPref:
-  - {fileID: 2733305529081223718, guid: d6b1cf7383e2e894686a3d7b6bf66d0e, type: 3}
-  - {fileID: 7764973187676711961, guid: 50a3f958f9a98a7418189a0b5a6008cc, type: 3}
+  character: {fileID: 0}
+  hairPref: []
+  _hairPrefNum: 0
 --- !u!4 &1664310339
 Transform:
   m_ObjectHideFlags: 0
@@ -698,6 +698,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1664310340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664310337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3f47738434b2f499bd88dfdd0d041d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1664310341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664310337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf281fd9be31a19478803c7fd3a39fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2086294358
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
