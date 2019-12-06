@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReadJson : MonoBehaviour
+public class ReadJson : PrefabNumber
 {
     string filename = "CharacterData.json";
    protected string path;
