@@ -29,7 +29,7 @@ public class UIscript : MonoBehaviour
         aPos.x = aPos.z = 0;
         aPos.y = number;
        RectTransform objectRectTransform = GetComponent<RectTransform>();
-       Debug.Log(", height: " + objectRectTransform.rect.position);
+     //  Debug.Log(", height: " + objectRectTransform.rect.position);
         //              number = objectRectTransform.rect.height / 5.7f;
 
         if (goUp == true)
