@@ -11,8 +11,8 @@ public class ReadJson : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // reads path to the json file and saves it in the path variable
         path = Application.persistentDataPath + "/" + filename;
-        Debug.Log(path);
     }
 
     // Update is called once per frame
@@ -24,17 +24,10 @@ public class ReadJson : MonoBehaviour
         }
     }
 
- /*   void SaveData()
-    {
-        string contents = JsonUtility.ToJson(gameData, true);
-        System.IO.File.WriteAllText(path, contents);
-        Debug.Log("file saved");
-    } */
-
     void ReadData()
     {
+        // reads the json file
         System.IO.File.ReadAllText(path);
         Debug.Log(gameData.hairType);
     }
-
 }

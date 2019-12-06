@@ -16,7 +16,9 @@ public class SaveGameData : ReadJson
 
     void SaveData()
     {
+        // saves the GameData value into a contents variable
         string contents = JsonUtility.ToJson(gameData, true);
+        // writes the contents variable to the json file
         System.IO.File.WriteAllText(path, contents);
         Debug.Log("file saved");
     }
