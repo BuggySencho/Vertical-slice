@@ -30,6 +30,7 @@ public class UIscript : MonoBehaviour
         aPos.y = number;
        RectTransform objectRectTransform = GetComponent<RectTransform>();
        Debug.Log(", height: " + objectRectTransform.rect.position);
+        //              number = objectRectTransform.rect.height / 5.7f;
 
         if (goUp == true)
         {
@@ -45,11 +46,13 @@ public class UIscript : MonoBehaviour
 
 void GoUp()
     {
+        //        scrollbar.transform.position -= new Vector3(0, number, 0);
         goUp = true;
         HN -= 1;
     }
     void GoDown()
     {
+        //        scrollbar.transform.position += new Vector3(0, number, 0);
         goDown = true;
         HN += 1;
     }
