@@ -17,12 +17,18 @@ public class UIscript : MonoBehaviour
         Down.onClick.AddListener(GoDown);
     }
     private void Update()
-    { 
-
+    {
         RectTransform objectRectTransform = gameObject.GetComponent<RectTransform>();
         Debug.Log("width: " + objectRectTransform.rect.width + ", height: " + objectRectTransform.rect.height);
         number = objectRectTransform.rect.height / 5.7f;
-
+//        if (Input.GetKeyDown(KeyCode.UpArrow))
+//        {
+//            scrollbar.transform.position -= new Vector3(0, number, 0);
+//        }
+//        else if (Input.GetKeyDown(KeyCode.DownArrow))
+//        {
+//            scrollbar.transform.position += new Vector3(0, number, 0);
+//        }
     }
 
     void GoUp()
