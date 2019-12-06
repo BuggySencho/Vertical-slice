@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class GameData : PrefabNumber
+public class GameData
 {
-    public int hairType =  0;
+    public int hairType =  3;
 }
