@@ -6,10 +6,16 @@ using UnityEngine.UI;
 public class UIscript : MonoBehaviour
 {
     [SerializeField] private Canvas canvas;
-    [SerializeField]private GameObject scrollbar;
-    [SerializeField] private float number;
+    [SerializeField] private GameObject scrollbar;
+    [SerializeField] private float number = 100f;
     [SerializeField] private Button Up;
     [SerializeField] private Button Down;
+    [SerializeField] private GameObject[] HButton;
+    [SerializeField] private bool goUp = false;
+    [SerializeField] private bool goDown = false;
+    [SerializeField] private GameObject middle;
+    [SerializeField] private int HN = 3;
+    [SerializeField] private RectTransform rectTransform;
 
     private void Start()
     {
@@ -18,25 +24,36 @@ public class UIscript : MonoBehaviour
     }
     private void Update()
     {
-        RectTransform objectRectTransform = gameObject.GetComponent<RectTransform>();
-        Debug.Log("width: " + objectRectTransform.rect.width + ", height: " + objectRectTransform.rect.height);
-        number = objectRectTransform.rect.height / 5.7f;
-//        if (Input.GetKeyDown(KeyCode.UpArrow))
-//        {
-//            scrollbar.transform.position -= new Vector3(0, number, 0);
-//        }
-//        else if (Input.GetKeyDown(KeyCode.DownArrow))
-//        {
-//            scrollbar.transform.position += new Vector3(0, number, 0);
-//        }
+        Vector3 aPos = rectTransform.position;
+        aPos = transform.position;
+        aPos.x = aPos.z = 0;
+        aPos.y = number;
+       RectTransform objectRectTransform = GetComponent<RectTransform>();
+       Debug.Log(", height: " + objectRectTransform.rect.position);
+        //              number = objectRectTransform.rect.height / 5.7f;
+
+        if (goUp == true)
+        {
+            rectTransform.localPosition += aPos;
+            goUp = false;
+        }
+       if (goDown == true)
+        {
+            rectTransform.localPosition -= aPos;
+            goDown = false;
+        }
     }
 
-    void GoUp()
+void GoUp()
     {
-        scrollbar.transform.position -= new Vector3(0, number, 0);
+        //        scrollbar.transform.position -= new Vector3(0, number, 0);
+        goUp = true;
+        HN -= 1;
     }
     void GoDown()
     {
-        scrollbar.transform.position += new Vector3(0, number, 0);
+        //        scrollbar.transform.position += new Vector3(0, number, 0);
+        goDown = true;
+        HN += 1;
     }
 }
