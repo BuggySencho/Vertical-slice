@@ -16,6 +16,11 @@ public class HairSelect : SpawnHair
     [SerializeField]
     protected Transform hairSpawnPoint;
 
+
+    private void Start()
+    {
+        HairSelection(0);
+    }
     public void HairSelection(int selectedNum)
     {
         // makes the hair prefab number the number of the selected hairstyle
