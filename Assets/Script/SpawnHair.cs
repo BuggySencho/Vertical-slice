@@ -11,6 +11,7 @@ public class SpawnHair : MonoBehaviour
     [SerializeField]
     private Transform hairSpawnPoint;
     private bool selected = false;
+    private float minus = 100f;
     // Update is called once per frame
 
     private void Start()
@@ -32,12 +33,12 @@ public class SpawnHair : MonoBehaviour
             Debug.Log("true");
         }
 
-        if (hair != null && selected)
+    /*    if (hair != null && selected)
         {
             Destroy(gameObject);
             hair = Instantiate(hairStyle[HairSelect.hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             selected = false;
             Debug.Log("false");
-        }
+        } */
     }
 }
