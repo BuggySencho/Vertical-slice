@@ -3418,7 +3418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairStyle:
-  - {fileID: 5404878606894575455, guid: f03d223c38e3d07438c240538f16ccb6, type: 3}
+  - {fileID: 8225286462749075769, guid: c20a7343dae8bb94c9ef269a17cdf98d, type: 3}
   - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
   - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
   hair: {fileID: 0}
@@ -4964,7 +4964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491763362}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.06, y: -0.86, z: -1.68}
+  m_LocalPosition: {x: -0.018, y: 0.495, z: -0.003}
   m_LocalScale: {x: 1.0944996, y: 1.0944996, z: 1.0944996}
   m_Children: []
   m_Father: {fileID: 1286978099}
