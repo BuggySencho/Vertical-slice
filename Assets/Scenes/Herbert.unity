@@ -2251,9 +2251,9 @@ MonoBehaviour:
   - {fileID: 2111362661}
   - {fileID: 480585187}
   - {fileID: 323970298}
-  - {fileID: 1406891132}
-  - {fileID: 945942404}
-  - {fileID: 214410803}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   goUp: 0
   goDown: 0
   middle: {fileID: 769131214}
@@ -2741,59 +2741,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048754241}
   m_CullTransparentMesh: 0
---- !u!1 &1192417999
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1192418000}
-  - component: {fileID: 1192418001}
-  m_Layer: 0
-  m_Name: ScriptManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1192418000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192417999}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.945417, y: -45.36737, z: 50.095062}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1192418001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1192417999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841009147b23de24596834a320952924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hairStyle:
-  - {fileID: 334769469378444095, guid: 4e9646fab7f6f2f4fbc471e3343b4d24, type: 3}
-  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
-  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
-  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
-  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
-  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
-  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
-  hair: {fileID: 0}
-  hairSpawnPoint: {fileID: 1491763363}
 --- !u!1 &1216548295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,6 +4382,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1543796761}
   - component: {fileID: 1543796762}
+  - component: {fileID: 1543796764}
+  - component: {fileID: 1543796763}
   m_Layer: 0
   m_Name: HairManager
   m_TagString: Untagged
@@ -4454,7 +4403,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1543796762
 MonoBehaviour:
@@ -4478,6 +4427,30 @@ MonoBehaviour:
   - {fileID: 2294795038248346252, guid: 919cf84b2bc3345429cdb9ff6e8ca209, type: 3}
   hair: {fileID: 0}
   hairSpawnPoint: {fileID: 1491763363}
+--- !u!114 &1543796763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543796760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf281fd9be31a19478803c7fd3a39fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1543796764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543796760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3f47738434b2f499bd88dfdd0d041d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1686287521
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,9 +5756,9 @@ MonoBehaviour:
   - {fileID: 2111362661}
   - {fileID: 480585187}
   - {fileID: 323970298}
-  - {fileID: 1406891132}
-  - {fileID: 945942404}
-  - {fileID: 214410803}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   goUp: 0
   goDown: 0
   middle: {fileID: 769131214}

@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class SpawnHair : MonoBehaviour
 {
-    [SerializeField]
-    protected GameObject[] hairStyle;
-    [SerializeField]
-    protected GameObject hair;
-    [SerializeField]
-    protected Transform hairSpawnPoint;
+
     protected bool selected = false;
     // Update is called once per frame
 
@@ -24,7 +19,7 @@ public class SpawnHair : MonoBehaviour
 
     public void HairSpawner()
     {
-        if (hair == null && !selected)
+     /*   if (hair == null && !selected)
         {
             hair = Instantiate(hairStyle[HairSelect.hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             selected = true;
@@ -32,9 +27,8 @@ public class SpawnHair : MonoBehaviour
         }
 
 
-            Destroy(gameObject);
             hair = Instantiate(hairStyle[HairSelect.hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
-        //    Debug.Log(HairSelect.hairPrefNum);
+        //    Debug.Log(HairSelect.hairPrefNum); */
         
-    }
+    } 
 }
