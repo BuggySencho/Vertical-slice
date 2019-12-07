@@ -29,5 +29,6 @@ public class ReadJson : MonoBehaviour
         // reads the json file
         System.IO.File.ReadAllText(path);
         Debug.Log(gameData.hairType);
+        Debug.Log(path);
     }
 }
