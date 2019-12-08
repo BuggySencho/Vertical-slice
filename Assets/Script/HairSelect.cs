@@ -31,6 +31,8 @@ public class HairSelect : SpawnHair
         {
             // spawns hair at the right position and with the right rotation
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
+            hair.AddComponent<RotateChar>();
+         //   hair.AddComponent<HeadZoom>();
             Debug.Log("true");
         }
 
@@ -40,6 +42,8 @@ public class HairSelect : SpawnHair
             // destroys previous hairstyle and spawns hair at the right position and with the right rotation
             Destroy(hair);
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
+            hair.AddComponent<RotateChar>();
+          //  hair.AddComponent<HeadZoom>();
             Debug.Log(hairPrefNum);
         }
 
