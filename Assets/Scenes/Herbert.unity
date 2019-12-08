@@ -3373,7 +3373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 138815320}
   scrollbar: {fileID: 799872222}
-  number: 82
+  number: 81.5
   Up: {fileID: 1398712991}
   Down: {fileID: 590779156}
   HButton:
