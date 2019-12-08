@@ -11,10 +11,9 @@ public class SaveGameData : ReadJson
         {
             SaveData();
         }
-        
     }
 
-    void SaveData()
+    public void SaveData()
     {
         // saves the GameData value into a contents variable
         string contents = JsonUtility.ToJson(gameData, true);

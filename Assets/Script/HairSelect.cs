@@ -14,8 +14,7 @@ public class HairSelect : SpawnHair
     protected GameObject hair;
     // position where the hair prefab will spawn
     [SerializeField]
-    protected Transform hairSpawnPoint;
-
+    protected Transform hairSpawnPoint; 
 
     private void Start()
     {

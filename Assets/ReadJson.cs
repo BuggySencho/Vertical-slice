@@ -26,8 +26,10 @@ public class ReadJson : MonoBehaviour
 
     void ReadData()
     {
+        string contents = JsonUtility.ToJson(gameData, true);
         // reads the json file
         System.IO.File.ReadAllText(path);
+        gameData = JsonUtility.FromJson<GameData>(contents);
         Debug.Log(gameData.hairType);
         Debug.Log(path);
     }
