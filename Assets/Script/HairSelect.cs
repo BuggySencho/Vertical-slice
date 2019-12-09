@@ -11,7 +11,7 @@ public class HairSelect : SaveGameData
     protected GameObject[] hairStyle;
     // hair object wich determens what hairstyle is currently displayed
     [SerializeField]
-    protected GameObject hair;
+    public static GameObject hair;
     // position where the hair prefab will spawn
     [SerializeField]
     protected Transform hairSpawnPoint;
