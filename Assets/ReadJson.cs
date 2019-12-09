@@ -26,11 +26,14 @@ public class ReadJson : MonoBehaviour
 
     void ReadData()
     {
-        string contents = JsonUtility.ToJson(gameData, true);
+        //string contents = JsonUtility.ToJson(gameData, true);
         // reads the json file
-        System.IO.File.ReadAllText(path);
-        gameData = JsonUtility.FromJson<GameData>(contents);
+        string Ian = System.IO.File.ReadAllText(path); // dit werkt
+        Debug.Log(Ian);
+
+        //gameData = JsonUtility.FromJson(Ian); // dit werkt niet
+        JsonUtility.FromJsonOverwrite(Ian, gameData.hairType); // < SIlvan
         Debug.Log(gameData.hairType);
-        Debug.Log(path);
+        //Debug.Log(path);
     }
 }

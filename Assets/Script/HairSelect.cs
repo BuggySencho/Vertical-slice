@@ -11,7 +11,7 @@ public class HairSelect : SaveGameData
     protected GameObject[] hairStyle;
     // hair object wich determens what hairstyle is currently displayed
     [SerializeField]
-    public static GameObject hair;
+    protected GameObject hair;
     // position where the hair prefab will spawn
     [SerializeField]
     protected Transform hairSpawnPoint;
@@ -33,7 +33,7 @@ public class HairSelect : SaveGameData
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             hair.AddComponent<RotateChar>();
             SaveData();
-            Debug.Log("true");
+          //  Debug.Log("true");
         }
 
         // spawns another hairstyle if selected and destroys the previous hairstyle
@@ -43,7 +43,8 @@ public class HairSelect : SaveGameData
             Destroy(hair);
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             hair.AddComponent<RotateChar>();
-            Debug.Log(hairPrefNum);
+            gameData.hairType = hairPrefNum;
+           // Debug.Log(hairPrefNum);
             SaveData();
         }
 
