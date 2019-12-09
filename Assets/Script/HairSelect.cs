@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HairSelect : SpawnHair
+public class HairSelect : SaveGameData
 {
     // the number of the hair prefab is saved in here
     public static int hairPrefNum;
@@ -14,7 +14,7 @@ public class HairSelect : SpawnHair
     protected GameObject hair;
     // position where the hair prefab will spawn
     [SerializeField]
-    protected Transform hairSpawnPoint; 
+    protected Transform hairSpawnPoint;
 
     private void Start()
     {
@@ -32,7 +32,7 @@ public class HairSelect : SpawnHair
             // spawns hair at the right position and with the right rotation
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             hair.AddComponent<RotateChar>();
-         //   hair.AddComponent<HeadZoom>();
+            SaveData();
             Debug.Log("true");
         }
 
@@ -43,8 +43,8 @@ public class HairSelect : SpawnHair
             Destroy(hair);
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             hair.AddComponent<RotateChar>();
-          //  hair.AddComponent<HeadZoom>();
             Debug.Log(hairPrefNum);
+            SaveData();
         }
 
     }
