@@ -30,8 +30,10 @@ public class HairSelect : SaveGameData
         if (hair == null)
         {
             // spawns hair at the right position and with the right rotation
-            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
-            hair.AddComponent<RotateChar>();
+            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint, false);
+            hair.transform.position = hairSpawnPoint.position;
+            hair.transform.rotation = hairSpawnPoint.rotation;
+          //  hair.AddComponent<RotateChar>();
             SaveData();
           //  Debug.Log("true");
         }
@@ -41,8 +43,10 @@ public class HairSelect : SaveGameData
         {
             // destroys previous hairstyle and spawns hair at the right position and with the right rotation
             Destroy(hair);
-            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
-            hair.AddComponent<RotateChar>();
+            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint, false);
+            hair.transform.position = hairSpawnPoint.position;
+            hair.transform.rotation = hairSpawnPoint.rotation;
+        //    hair.AddComponent<RotateChar>();
             gameData.hairType = hairPrefNum;
            // Debug.Log(hairPrefNum);
             SaveData();

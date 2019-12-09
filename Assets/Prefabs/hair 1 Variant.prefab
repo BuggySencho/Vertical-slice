@@ -1,31 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8612213005754425910
+--- !u!1001 &2927351320407178523
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7299512133768795491, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 38e7f746f5f21a944ad8de3743fe6d29, type: 2}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.00076652726
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.006213457
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.007920413
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
@@ -35,17 +30,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
@@ -60,7 +55,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
@@ -82,6 +77,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 38e7f746f5f21a944ad8de3743fe6d29, type: 2}
     - target: {fileID: -927199367670048503, guid: 5a5beb8f9f78ae547bee8fdbb846e467,
         type: 3}
       propertyPath: m_Name
