@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ReadJson : MonoBehaviour
 {
-    string filename = "CharacterData.json";
+   protected string filename = "CharacterData.json";
    protected string path;
    protected GameData gameData = new GameData();
 

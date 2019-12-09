@@ -14,10 +14,12 @@ public class UIscript : MonoBehaviour
     [SerializeField] private bool goUp = false;
     [SerializeField] private bool goDown = false;
     [SerializeField] private GameObject middle;
-    [SerializeField] private int HN = 3;
+    [SerializeField] private int HN = 2;
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private GameObject[] FNumbers;
-    [SerializeField] private GameObject HSpawnPoint;
+    [SerializeField] protected Transform HSpawnPoint;
+    [SerializeField] private GameObject parent;
+    [SerializeField] private GameObject[] ActiveNumber;
 
     private void Start()
     {
@@ -44,55 +46,67 @@ public class UIscript : MonoBehaviour
             rectTransform.localPosition += aPos;
             goDown = false;
         }
-        switch (HN)
-        {
-            case 1:
-                print("Hair number 1");
-                Instantiate(FNumbers[HN]);
-                break;
-            case 2:
-                print("Hair number 2");
-                Instantiate(FNumbers[HN]);
-                break;
-            case 3:
-                print("Hair number 3");
-                Instantiate(FNumbers[HN]);
-                break;
-            case 4:
-                print("Hair number 4");
-                Instantiate(FNumbers[HN]);
-                break;
-            case 5:
-                print("Hair number 5");
-                Instantiate(FNumbers[HN]);
-                break;
-            case 6:
-                print("Hair number 6");
-                Instantiate(FNumbers[HN]);
-                break;
-            case 7:
-                print("Hair number 7");
-                Instantiate(FNumbers[HN]);
-                break;
-        }
     }
 
-void GoUp()
+    void GoUp()
     {
         //        scrollbar.transform.position -= new Vector3(0, number, 0);
         goUp = true;
-        if(HN >= 2)
+        if (HN >= 1)
         {
             HN -= 1;
         }
+        Switch();
     }
     void GoDown()
     {
         //        scrollbar.transform.position += new Vector3(0, number, 0);
         goDown = true;
-        if(HN <= 6)
+        if (HN <= 5)
         {
             HN += 1;
         }
+        Switch();
+    }
+
+    void Switch()
+    {
+        switch (HN)
+        {
+            case 0:
+                print("Hair number 1");
+                Number();
+                break;
+            case 1:
+                print("Hair number 2");
+                Number();
+                break;
+            case 2:
+                print("Hair number 3");
+                Number();
+                break;
+            case 3:
+                print("Hair number 4");
+                Number();
+                break;
+            case 4:
+                print("Hair number 5");
+                Number();
+                break;
+            case 5:
+                print("Hair number 6");
+                Number();
+                break;
+            case 6:
+
+                print("Hair number 7");
+                Number();
+                break;
+        }
+    }
+    void Number()
+    {
+        Object.Destroy(GameObject.FindGameObjectWithTag("Number"));
+        Instantiate(FNumbers[HN], GameObject.FindGameObjectWithTag("SpawnPoint").transform);
     }
 }
