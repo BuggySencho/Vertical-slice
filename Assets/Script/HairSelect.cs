@@ -33,7 +33,11 @@ public class HairSelect : SaveGameData
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             hair.AddComponent<RotateChar>();
             SaveData();
+<<<<<<< HEAD
           //  Debug.Log("true");
+=======
+            Debug.Log("true");
+>>>>>>> Herbert
         }
 
         // spawns another hairstyle if selected and destroys the previous hairstyle
@@ -43,8 +47,12 @@ public class HairSelect : SaveGameData
             Destroy(hair);
             hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint.position, hairSpawnPoint.rotation);
             hair.AddComponent<RotateChar>();
+<<<<<<< HEAD
             gameData.hairType = hairPrefNum;
            // Debug.Log(hairPrefNum);
+=======
+            Debug.Log(hairPrefNum);
+>>>>>>> Herbert
             SaveData();
         }
 
