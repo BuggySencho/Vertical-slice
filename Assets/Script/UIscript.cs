@@ -16,6 +16,8 @@ public class UIscript : MonoBehaviour
     [SerializeField] private GameObject middle;
     [SerializeField] private int HN = 3;
     [SerializeField] private RectTransform rectTransform;
+    [SerializeField] private GameObject[] FNumbers;
+    [SerializeField] private GameObject HSpawnPoint;
 
     private void Start()
     {
@@ -34,13 +36,44 @@ public class UIscript : MonoBehaviour
 
         if (goUp == true)
         {
-            rectTransform.localPosition += aPos;
+            rectTransform.localPosition -= aPos;
             goUp = false;
         }
        if (goDown == true)
         {
-            rectTransform.localPosition -= aPos;
+            rectTransform.localPosition += aPos;
             goDown = false;
+        }
+        switch (HN)
+        {
+            case 1:
+                print("Hair number 1");
+                Instantiate(FNumbers[HN]);
+                break;
+            case 2:
+                print("Hair number 2");
+                Instantiate(FNumbers[HN]);
+                break;
+            case 3:
+                print("Hair number 3");
+                Instantiate(FNumbers[HN]);
+                break;
+            case 4:
+                print("Hair number 4");
+                Instantiate(FNumbers[HN]);
+                break;
+            case 5:
+                print("Hair number 5");
+                Instantiate(FNumbers[HN]);
+                break;
+            case 6:
+                print("Hair number 6");
+                Instantiate(FNumbers[HN]);
+                break;
+            case 7:
+                print("Hair number 7");
+                Instantiate(FNumbers[HN]);
+                break;
         }
     }
 
@@ -48,12 +81,18 @@ void GoUp()
     {
         //        scrollbar.transform.position -= new Vector3(0, number, 0);
         goUp = true;
-        HN -= 1;
+        if(HN >= 2)
+        {
+            HN -= 1;
+        }
     }
     void GoDown()
     {
         //        scrollbar.transform.position += new Vector3(0, number, 0);
         goDown = true;
-        HN += 1;
+        if(HN <= 6)
+        {
+            HN += 1;
+        }
     }
 }
