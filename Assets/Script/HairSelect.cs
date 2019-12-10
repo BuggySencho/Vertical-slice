@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HairSelect : SaveGameData
 {
@@ -24,7 +25,7 @@ public class HairSelect : SaveGameData
     {
         // makes the hair prefab number the number of the selected hairstyle
         hairPrefNum = selectedNum;
-        Debug.Log(hairPrefNum);
+      //  Debug.Log(hairPrefNum);
 
         // spawns first hairpiece if there is no hair on the player
         if (hair == null)
@@ -51,6 +52,5 @@ public class HairSelect : SaveGameData
            // Debug.Log(hairPrefNum);
             SaveData();
         }
-
     }
 }

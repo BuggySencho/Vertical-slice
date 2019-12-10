@@ -13,6 +13,7 @@ public class ReadJson : MonoBehaviour
     {
         // reads path to the json file and saves it in the path variable
         path = Application.persistentDataPath + "/" + filename;
+        ReadData();
     }
 
     // Update is called once per frame
@@ -35,5 +36,10 @@ public class ReadJson : MonoBehaviour
         JsonUtility.FromJsonOverwrite(Ian, gameData.hairType); // < SIlvan
         Debug.Log(gameData.hairType);
         //Debug.Log(path);
+    }
+
+    void SpawnCharacter()
+    {
+        
     }
 }

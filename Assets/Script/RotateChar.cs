@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RotateChar : MonoBehaviour
 {
@@ -15,5 +16,10 @@ public class RotateChar : MonoBehaviour
             transform.Rotate(transform.up, -Vector3.Dot(curPos, Camera.main.transform.right), Space.World);
         }
         prevPos = Input.mousePosition;
+
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            SceneManager.LoadScene("LoadPlayer");
+        }
     }
 }
