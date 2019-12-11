@@ -1485,17 +1485,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 648465aee9a388f4d95bba437282b7f6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 648465aee9a388f4d95bba437282b7f6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 648465aee9a388f4d95bba437282b7f6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -1589461036848996211, guid: 648465aee9a388f4d95bba437282b7f6,
         type: 3}
@@ -4865,7 +4865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hairStyle:
-  - {fileID: 6593805945035072530, guid: 4e9646fab7f6f2f4fbc471e3343b4d24, type: 3}
+  - {fileID: 8595488652792861297, guid: 9329c1a5eb955674ea0e667bbaef618c, type: 3}
   - {fileID: 2055973904996465152, guid: 09a53bbe734ac094d96722105e827539, type: 3}
   - {fileID: 2904451698712124295, guid: 480eae4cebbccf341a390bb9d5688aff, type: 3}
   - {fileID: 8453632062570531448, guid: 74189821f76f3554c830f2bd1f811207, type: 3}
