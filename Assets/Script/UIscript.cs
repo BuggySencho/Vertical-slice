@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIscript : MonoBehaviour
+public class UIscript : HairSelect
 {
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject scrollbar;
@@ -14,7 +14,7 @@ public class UIscript : MonoBehaviour
     [SerializeField] private bool goUp = false;
     [SerializeField] private bool goDown = false;
     [SerializeField] private GameObject middle;
-    [SerializeField] private int HN = 2;
+                     public static int HN = 0;
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private GameObject[] FNumbers;
     [SerializeField] protected Transform HSpawnPoint;
@@ -79,38 +79,7 @@ public class UIscript : MonoBehaviour
 
     void Switch()
     {
-        switch (HN)
-        {
-            case 0:
-                print("Hair number 1");
-                Number();
-                break;
-            case 1:
-                print("Hair number 2");
-                Number();
-                break;
-            case 2:
-                print("Hair number 3");
-                Number();
-                break;
-            case 3:
-                print("Hair number 4");
-                Number();
-                break;
-            case 4:
-                print("Hair number 5");
-                Number();
-                break;
-            case 5:
-                print("Hair number 6");
-                Number();
-                break;
-            case 6:
-
-                print("Hair number 7");
-                Number();
-                break;
-        }
+        Number();
         if (HN == 0)
             GreyUp.SetActive(true);
         else if (HN == 6)
@@ -123,7 +92,9 @@ public class UIscript : MonoBehaviour
     }
     void Number()
     {
+        //Debug.Log("efhkeh");
         Object.Destroy(GameObject.FindGameObjectWithTag("Number"));
         Instantiate(FNumbers[HN], GameObject.FindGameObjectWithTag("SpawnPoint").transform);
+        HairSelection(HN);
     }
 }

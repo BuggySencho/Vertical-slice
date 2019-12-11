@@ -4146,6 +4146,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdad9dc50cca5a9479b7e370c7d05429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hairStyle:
+  - {fileID: 8595488652792861297, guid: 9329c1a5eb955674ea0e667bbaef618c, type: 3}
+  - {fileID: 8847448131857030491, guid: 5038f326fc1ddab45a12eaba65f738e4, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
+  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
+  - {fileID: 8847448131857030491, guid: 5038f326fc1ddab45a12eaba65f738e4, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
+  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
+  hair: {fileID: 0}
+  hairSpawnPoint: {fileID: 1491763363}
   canvas: {fileID: 138815320}
   scrollbar: {fileID: 799872222}
   number: 81.5
@@ -9009,12 +9019,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hairStyle:
   - {fileID: 8595488652792861297, guid: 9329c1a5eb955674ea0e667bbaef618c, type: 3}
-  - {fileID: 2055973904996465152, guid: 09a53bbe734ac094d96722105e827539, type: 3}
-  - {fileID: 2904451698712124295, guid: 480eae4cebbccf341a390bb9d5688aff, type: 3}
-  - {fileID: 8453632062570531448, guid: 74189821f76f3554c830f2bd1f811207, type: 3}
-  - {fileID: 7674097854991463329, guid: e10a0a2c0eff1474d9220837afc477a4, type: 3}
-  - {fileID: 2252027939112019022, guid: 295528fce945d994bb91f4c2c01ab484, type: 3}
-  - {fileID: 269763641618762226, guid: 919cf84b2bc3345429cdb9ff6e8ca209, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
+  - {fileID: 1220561265207619494, guid: 28abf4a58b345cb4aadd6317f6e8bd4b, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
+  - {fileID: 1149907127875894748, guid: c59d88429d108f6408d9011c67a70ab4, type: 3}
   hair: {fileID: 0}
   hairSpawnPoint: {fileID: 1491763363}
 --- !u!114 &1543796763
@@ -11640,6 +11650,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8713276042186910554, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11663,7 +11678,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.2645279
+      value: 0.9512007
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
@@ -11673,7 +11688,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.964378
+      value: -0.30857292
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
@@ -11688,7 +11703,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 30.678001
+      value: 215.94699
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
@@ -11710,11 +11725,51 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.20975856
       objectReference: {fileID: 0}
+    - target: {fileID: -3787549960556572880, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
+    - target: {fileID: -1837047505864049276, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
+    - target: {fileID: -1555563355251608267, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
+    - target: {fileID: -1402186911670568563, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
     - target: {fileID: -927199367670048503, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
         type: 3}
       propertyPath: m_Name
       value: bowl unwrapped
       objectReference: {fileID: 0}
+    - target: {fileID: 884096374220043734, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
+    - target: {fileID: 2833599965923659076, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
+    - target: {fileID: 3143071246843359808, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
+    - target: {fileID: 8016016615466377884, guid: b8f2ea37255b50d4bad27bb3d4a117a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4c35f2ec046481e458911dcb701a17e0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8f2ea37255b50d4bad27bb3d4a117a3, type: 3}
 --- !u!1 &1981429396

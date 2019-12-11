@@ -22,16 +22,16 @@ public class HairSelect : SaveGameData
         HairSelection(0);
     }
     public void HairSelection(int selectedNum)
-    {
+    {        
         // makes the hair prefab number the number of the selected hairstyle
         hairPrefNum = selectedNum;
-      //  Debug.Log(hairPrefNum);
+       Debug.Log(hairPrefNum);
 
         // spawns first hairpiece if there is no hair on the player
         if (hair == null)
         {
             // spawns hair at the right position and with the right rotation
-            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint, false);
+            hair = Instantiate(hairStyle[UIscript.HN], hairSpawnPoint, false);
             hair.transform.position = hairSpawnPoint.position;
             hair.transform.rotation = hairSpawnPoint.rotation;
           //  hair.AddComponent<RotateChar>();
@@ -44,7 +44,7 @@ public class HairSelect : SaveGameData
         {
             // destroys previous hairstyle and spawns hair at the right position and with the right rotation
             Destroy(hair);
-            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint, false);
+            hair = Instantiate(hairStyle[UIscript.HN], hairSpawnPoint, false);
             hair.transform.position = hairSpawnPoint.position;
             hair.transform.rotation = hairSpawnPoint.rotation;
         //    hair.AddComponent<RotateChar>();
