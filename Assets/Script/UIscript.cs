@@ -20,11 +20,14 @@ public class UIscript : MonoBehaviour
     [SerializeField] protected Transform HSpawnPoint;
     [SerializeField] private GameObject parent;
     [SerializeField] private GameObject[] ActiveNumber;
+    [SerializeField] private GameObject GreyUp;
+    [SerializeField] private GameObject GreyDown;
 
     private void Start()
     {
         Up.onClick.AddListener(GoUp);
         Down.onClick.AddListener(GoDown);
+
     }
     private void Update()
     {
@@ -33,9 +36,6 @@ public class UIscript : MonoBehaviour
         aPos.x = aPos.z = 0;
         aPos.y = number;
        RectTransform objectRectTransform = GetComponent<RectTransform>();
-     //  Debug.Log(", height: " + objectRectTransform.rect.position);
-        //              number = objectRectTransform.rect.height / 5.7f;
-
         if (goUp == true)
         {
             rectTransform.localPosition -= aPos;
@@ -45,6 +45,16 @@ public class UIscript : MonoBehaviour
         {
             rectTransform.localPosition += aPos;
             goDown = false;
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            GoUp();
+            Debug.Log("UPACTIVE");
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            GoDown();
+            Debug.Log("DOWNACTIVE");
         }
     }
 
@@ -102,6 +112,15 @@ public class UIscript : MonoBehaviour
                 print("Hair number 7");
                 Number();
                 break;
+        }
+        if (HN == 0)
+            GreyUp.SetActive(true);
+        else if (HN == 6)
+            GreyDown.SetActive(true);
+        else
+        {
+            GreyDown.SetActive(false);
+            GreyUp.SetActive(false);
         }
     }
     void Number()
