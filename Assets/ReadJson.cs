@@ -14,16 +14,11 @@ public class ReadJson : MonoBehaviour
         // reads path to the json file and saves it in the path variable
         path = Application.persistentDataPath + "/" + filename;
         ReadData();
+     //   HairSelect.hair = Instantiate(HairSelect.hairStyle[GameData.hairType], HairSelect.hairSpawnPoint, false);
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            ReadData();
-        }
-    }
+
 
     void ReadData()
     {
@@ -33,8 +28,8 @@ public class ReadJson : MonoBehaviour
         Debug.Log(Ian);
 
         //gameData = JsonUtility.FromJson(Ian); // dit werkt niet
-        JsonUtility.FromJsonOverwrite(Ian, gameData.hairType); // < SIlvan
-        Debug.Log(gameData.hairType);
+        JsonUtility.FromJsonOverwrite(Ian, GameData.hairType);
+        Debug.Log(GameData.hairType);
         //Debug.Log(path);
     }
 

@@ -27,10 +27,12 @@ public class UIscript : HairSelect
     {
         Up.onClick.AddListener(GoUp);
         Down.onClick.AddListener(GoDown);
+        Number();
 
     }
     private void Update()
     {
+        DontDestroyOnLoad(this.gameObject);
         Vector3 aPos = rectTransform.position;
         aPos = transform.position;
         aPos.x = aPos.z = 0;
@@ -92,9 +94,25 @@ public class UIscript : HairSelect
     }
     void Number()
     {
-        //Debug.Log("efhkeh");
-        Object.Destroy(GameObject.FindGameObjectWithTag("Number"));
+        Destroy(GameObject.FindGameObjectWithTag("Number"));
         Instantiate(FNumbers[HN], GameObject.FindGameObjectWithTag("SpawnPoint").transform);
-        HairSelection(HN);
+
+        if (hair == null)
+        {
+            // spawns hair at the right position and with the right rotation
+            hair = Instantiate(hairStyle[0], hairSpawnPoint, false);
+            hair.transform.position = hairSpawnPoint.position;
+            hair.transform.rotation = hairSpawnPoint.rotation;
+            //  hair.AddComponent<RotateChar>();
+            SaveData();
+            //  Debug.Log("true");
+        }
+        else
+        {
+            Destroy(hair);
+            HairSelection(0);
+        }
+        //Debug.Log("efhkeh");
+        
     }
 }
