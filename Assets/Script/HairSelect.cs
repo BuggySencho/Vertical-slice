@@ -24,7 +24,7 @@ public class HairSelect : SaveGameData
     public void HairSelection(int selectedNum)
     {        
         // makes the hair prefab number the number of the selected hairstyle
-        hairPrefNum = selectedNum;
+        hairPrefNum = UIscript.HN;
        Debug.Log(hairPrefNum);
 
         // spawns first hairpiece if there is no hair on the player
