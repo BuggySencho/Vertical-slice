@@ -6,5 +6,5 @@ using UnityEngine;
 public class GameData
 {
     // hairtype variable that gets pushed to the json file, is used to get the right hair prefab
-    public static int hairType =  HairSelect.hairPrefNum;
+  //  public static int hairType =  UIscript.HN;
 }

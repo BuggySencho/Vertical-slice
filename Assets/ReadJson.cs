@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ReadJson : MonoBehaviour
 {
-   protected string filename = "CharacterData.json";
-   protected string path;
-   protected GameData gameData = new GameData();
+ /*  public string filename = "CharacterData.json";
+   public string path;
+   GameData gameData = new GameData();
 
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,6 @@ public class ReadJson : MonoBehaviour
         // reads path to the json file and saves it in the path variable
         path = Application.persistentDataPath + "/" + filename;
         ReadData();
-     //   HairSelect.hair = Instantiate(HairSelect.hairStyle[GameData.hairType], HairSelect.hairSpawnPoint, false);
     }
 
     // Update is called once per frame
@@ -36,5 +35,5 @@ public class ReadJson : MonoBehaviour
     void SpawnCharacter()
     {
         
-    }
+    }   */
 }

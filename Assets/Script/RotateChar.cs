@@ -16,10 +16,5 @@ public class RotateChar : MonoBehaviour
             transform.Rotate(transform.up, -Vector3.Dot(curPos, Camera.main.transform.right), Space.World);
         }
         prevPos = Input.mousePosition;
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            SceneManager.LoadScene("LoadPlayer");
-        }
     }
 }

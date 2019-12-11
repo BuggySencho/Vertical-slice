@@ -14,7 +14,7 @@ public class UIscript : HairSelect
     [SerializeField] private bool goUp = false;
     [SerializeField] private bool goDown = false;
     [SerializeField] private GameObject middle;
-                     public static int HN = 0;
+                     static  public int HN = 0;
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private GameObject[] FNumbers;
     [SerializeField] protected Transform HSpawnPoint;
@@ -32,7 +32,6 @@ public class UIscript : HairSelect
     }
     private void Update()
     {
-        DontDestroyOnLoad(this.gameObject);
         Vector3 aPos = rectTransform.position;
         aPos = transform.position;
         aPos.x = aPos.z = 0;
@@ -104,13 +103,12 @@ public class UIscript : HairSelect
             hair.transform.position = hairSpawnPoint.position;
             hair.transform.rotation = hairSpawnPoint.rotation;
             //  hair.AddComponent<RotateChar>();
-            SaveData();
             //  Debug.Log("true");
         }
         else
         {
             Destroy(hair);
-            HairSelection(0);
+            HairSelection();
         }
         //Debug.Log("efhkeh");
         

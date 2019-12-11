@@ -3747,6 +3747,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdad9dc50cca5a9479b7e370c7d05429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hairStyle:
+  - {fileID: 4889742166705055305, guid: 9329c1a5eb955674ea0e667bbaef618c, type: 3}
+  - {fileID: 8934251959789040611, guid: a85fd9997f746f644915734791e2ce22, type: 3}
+  - {fileID: 5074580656461914634, guid: b907f7d49f30c0e49887341178e99086, type: 3}
+  - {fileID: 3785059195043979016, guid: 4164242b64e13354089c8b1d18b4c2cd, type: 3}
+  - {fileID: 5983292722335745188, guid: fddb4d3d1cfd3cc458746796b33e21f8, type: 3}
+  - {fileID: 3849984449280916172, guid: 0697f0518b5c44d46ba637e362de2805, type: 3}
+  - {fileID: 4719806710892621644, guid: 6e8f052609839024590be74b3fb8b6f6, type: 3}
+  hair: {fileID: 0}
+  hairSpawnPoint: {fileID: 1491763363}
   canvas: {fileID: 138815320}
   scrollbar: {fileID: 799872222}
   number: 81.5
@@ -8782,7 +8792,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1543796761}
-  - component: {fileID: 1543796763}
   - component: {fileID: 1543796765}
   m_Layer: 0
   m_Name: HairManager
@@ -8805,18 +8814,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1543796763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543796760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf281fd9be31a19478803c7fd3a39fec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1543796765
 MonoBehaviour:
   m_ObjectHideFlags: 0

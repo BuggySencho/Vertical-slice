@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnHair : MonoBehaviour
+public class SpawnHair : HairSelect
 {
 
     protected bool selected = false;
@@ -10,7 +10,12 @@ public class SpawnHair : MonoBehaviour
 
     private void Start()
     {
-
+        hairPrefNum = UIscript.HN;
+        hair = Instantiate(hairStyle[HairSelect.hairPrefNum], hairSpawnPoint, false);
+        if (hair == null && !selected)
+        {
+            hair = Instantiate(hairStyle[HairSelect.hairPrefNum], hairSpawnPoint, false);
+        }
     }
     void Update()
     {
