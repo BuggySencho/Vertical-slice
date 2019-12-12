@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIscript : HairSelect
 {
-    [SerializeField] private Canvas canvas;
+    [SerializeField] public GameObject canvasOBJ;
     [SerializeField] private GameObject scrollbar;
     [SerializeField] private float number = 100f;
     [SerializeField] private Button Up;

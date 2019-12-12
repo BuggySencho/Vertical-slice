@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+
+    public UIscript uiScript;
+    // Loads new scene
     public void Loading()
     {
-        SceneManager.LoadScene("LoadPlayer");
+        uiScript = GameObject.Find("Scrollbar").GetComponent<UIscript>();
+        uiScript.canvasOBJ.SetActive(false);
+     //  SceneManager.LoadScene("LoadPlayer");
     }
 }

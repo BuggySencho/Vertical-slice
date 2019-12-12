@@ -3,25 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class HairSelect : SaveGameData
+public class HairSelect : MonoBehaviour
 {
     // the number of the hair prefab is saved in here
-    public static int hairPrefNum;
+    static public int hairPrefNum;
     // array with all posible hairstyles
-    [SerializeField]
-    protected GameObject[] hairStyle;
+    public GameObject[] hairStyle;
     // hair object wich determens what hairstyle is currently displayed
-    [SerializeField]
-    protected GameObject hair;
+    public GameObject hair;
     // position where the hair prefab will spawn
-    [SerializeField]
-    protected Transform hairSpawnPoint;
+    public Transform hairSpawnPoint;
 
     private void Start()
     {
-        HairSelection(0);
+        HairSelection();
     }
-    public void HairSelection(int selectedNum)
+    public void HairSelection()
     {        
         // makes the hair prefab number the number of the selected hairstyle
         hairPrefNum = UIscript.HN;
@@ -31,26 +28,23 @@ public class HairSelect : SaveGameData
         if (hair == null)
         {
             // spawns hair at the right position and with the right rotation
-            hair = Instantiate(hairStyle[UIscript.HN], hairSpawnPoint, false);
+            hair = Instantiate(hairStyle[0], hairSpawnPoint, false);
             hair.transform.position = hairSpawnPoint.position;
             hair.transform.rotation = hairSpawnPoint.rotation;
           //  hair.AddComponent<RotateChar>();
-            SaveData();
           //  Debug.Log("true");
         }
 
         // spawns another hairstyle if selected and destroys the previous hairstyle
-        if (hair != null)
+        else
         {
             // destroys previous hairstyle and spawns hair at the right position and with the right rotation
             Destroy(hair);
-            hair = Instantiate(hairStyle[UIscript.HN], hairSpawnPoint, false);
+            hair = Instantiate(hairStyle[hairPrefNum], hairSpawnPoint, false);
             hair.transform.position = hairSpawnPoint.position;
             hair.transform.rotation = hairSpawnPoint.rotation;
         //    hair.AddComponent<RotateChar>();
-            gameData.hairType = hairPrefNum;
            // Debug.Log(hairPrefNum);
-            SaveData();
         }
     }
 }
